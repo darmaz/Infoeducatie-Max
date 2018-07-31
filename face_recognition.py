@@ -54,9 +54,7 @@ while True:
             from subprocess import call
             call(["aplay", "/home/pi/mihnea.wav"])
             time.sleep(500)
-        else:
-            print(Id)
-			Id = "Unknow"
+       
 
         # Put text describe who is in the picture
         cv2.rectangle(im, (x-22,y-90), (x+w+22, y-22), (0,255,0), -1)
